@@ -1,0 +1,14 @@
+{
+  "name": "cavecrew",
+  "description": "Delegate bounded work to three caveman-compressed subagents (investigator/builder/reviewer). Their output is compressed, so results injected back into the main context are ~60% smaller — your context lasts longer.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aleksei Tkachev",
+    "email": "tkachev@axioma-ai.ru",
+    "url": "https://github.com/tkachev-ai"
+  },
+  "homepage": "https://github.com/tkachev-ai/cavecrew",
+  "repository": "https://github.com/tkachev-ai/cavecrew",
+  "license": "MIT",
+  "keywords": ["subagents", "context-efficiency", "code-review", "delegation", "token-saving"]
+}
