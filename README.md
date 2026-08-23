@@ -4,6 +4,18 @@
 
 Delegate bounded work to three caveman-compressed subagents instead of doing it inline. Their output is compressed, so the tool-result injected back into your main context is ~60% smaller — your context lasts longer across long sessions.
 
+## How it works
+
+```mermaid
+flowchart TD
+    M[Main Claude context] -->|locate| I[investigator<br/>read-only]
+    M -->|bounded edit| B[builder<br/>1-2 files]
+    M -->|review| RV[reviewer<br/>diff]
+    I -->|compressed receipt| M
+    B -->|compressed diff| M
+    RV -->|one-line findings| M
+```
+
 ## What's inside
 
 - **cavecrew-investigator** — read-only code locator. Returns a `file:line` table for "where is X defined", "what calls Y", "list all uses of Z", "map this directory". Refuses to suggest fixes.
