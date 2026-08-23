@@ -1,5 +1,7 @@
 # cavecrew
 
+[![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-plugin-6C47FF)](https://github.com/tkachev-ai/cavecrew) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Release](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/tkachev-ai/cavecrew/releases)
+
 Delegate bounded work to three caveman-compressed subagents instead of doing it inline. Their output is compressed, so the tool-result injected back into your main context is ~60% smaller — your context lasts longer across long sessions.
 
 ## What's inside
